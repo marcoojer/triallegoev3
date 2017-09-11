@@ -3,7 +3,8 @@ from ev3dev.auto import *
 import time
 
 m = Motor(OUTPUT_A)
+print("The maximun velocity is:",m.max_speed)
 for i in range(10):
-	m.run_timed(time_sp=3000, speed_sp=500)
+	m.run_timed(time_sp=3000, speed_sp=50*i)
 
 
