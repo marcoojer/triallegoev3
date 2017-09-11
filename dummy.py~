@@ -11,10 +11,7 @@ for i in range(10):
 	print ("The relative position is", m.position)
 	print ("the velocity is", 50*i)
 	print("The distances is", u.proximity)
-	if i%2==0:
-		screen.draw.rectangle((10,10,60,20), fill='black')
-	else:
-		clear()
+	
 
 
 
