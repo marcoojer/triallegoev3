@@ -11,7 +11,7 @@ for i in range(10):
 	print ("The relative position is", m.position)
 	print ("the velocity is", 50*i)
 	print("The distances is", u.proximity)
-	
+	time.sleep(3)
 
 
 

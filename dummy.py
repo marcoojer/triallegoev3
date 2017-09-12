@@ -7,11 +7,12 @@ u=InfraredSensor(INPUT_4)
 
 print("The maximun velocity is:",m.max_speed)
 for i in range(10):
-	m.run_timed(time_sp=3000, speed_sp=50*i)
-	print ("The relative position is", m.position)
-	print ("the velocity is", 50*i)
-	print("The distances is", u.proximity)
-	time.sleep(3)
+	if i%2==0:
+		m.run_to_rel_pos(position_sp=1080,speed_sp=500)
+	else:
+		m.run_to_rel_pos(position_sp=-1080,speed_sp=500)
+	m.wait_while('running')
+	
 
 
 
